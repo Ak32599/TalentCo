@@ -11,9 +11,9 @@ const Signin = () => {
 
   // Hardcoded list of valid admin users as requested
   const validAdmins = {
-    "2400032152@kluniversity.in": "Aditya",
-    "2400032152@kluniversity.in": "Aditya",
-    "2400032152@kluniversity.in": "Aditya" // Note: As per your request, password for this user is 'SA'
+    "2400032599@kluniversity.in": "Ak",
+    "2400030159@kluniversity.in": "Sa",
+    "2400030653@kluniversity.in": "Ra" // Note: As per your request, password for this user is 'SA'
   };
 
   const handleChange = (e) => {
