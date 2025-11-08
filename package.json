@@ -1,9 +1,8 @@
 {
-  "name": "talentco",
+  "name": "my-project",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "homepage": "https://Ak32599.github.io/TalentCo/",
+  "homepage": "https://ak32599.github.io/TalentCo",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,8 +12,10 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.10.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.9.4"
   },
   "devDependencies": {

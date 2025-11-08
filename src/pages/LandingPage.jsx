@@ -52,7 +52,7 @@ const LandingPage = () => {
             <section id="contact" className="cta-section">
                 <h2>Ready to Find Your Next Star?</h2>
                 <p>Let's build your dream team together. Click the button below to start your search and discover the best talent in the industry.</p>
-                <a href="/signin" onClick={handleFindTalentClick} className="hero-button btn-talent">FIND TALENT</a>
+<a href="/signin" onClick={handleFindTalentClick} className="hero-button btn-talent">FIND TALENT</a>
             </section>
         </div>
     );
