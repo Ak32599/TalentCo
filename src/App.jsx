@@ -4,7 +4,8 @@ import { Routes, Route, useNavigate, Outlet } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import SignIn from './pages/signin';
+// import SignIn from './pages/signin';
+import Signin from './pages/Signin';
 import HomePage from './pages/HomePage';
 import ProfessionalsListPage from './pages/ProfessionalsListPage';
 import ProfessionalDetailPage from './pages/ProfessionalDetailPage';
