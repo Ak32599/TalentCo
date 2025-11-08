@@ -6,13 +6,13 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 // import SignIn from './pages/signin';
 import Signin from './pages/Signin';
-import HomePage from './pages/HomePage';
-import ProfessionalsListPage from './pages/ProfessionalsListPage';
-import ProfessionalDetailPage from './pages/ProfessionalDetailPage';
-import ContactPage from './pages/ContactPage';
-import FavoritesPage from './pages/FavoritesPage';
-import SearchPage from './pages/SearchPage';
-import DashboardPage from './pages/DashboardPage';
+import HomePage from './pages/homepage';
+import ProfessionalsListPage from './pages/professionalslistpage';
+import ProfessionalDetailPage from './pages/professionaldetailpage';
+import ContactPage from './pages/contactpage';
+import FavoritesPage from './pages/favoritespage';
+import SearchPage from './pages/searchpage';
+import DashboardPage from './pages/dashboardpage';
 import './App.css';
 
 // This is the new layout component for your main application.
