@@ -101,3 +101,68 @@
 .header-link:hover {
   color: #fff;
 }
+
+.star-border {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Star border + glow */
+.star-icon {
+  padding: 4px 6px;
+  border: 2px solid #ffd700; /* gold border */
+  border-radius: 6px;       /* slightly rounded box */
+  font-size: 16px;
+  color: #ffd700;
+  transition: 0.25s ease-in-out;
+}
+
+/* Glow effect on hover */
+.star-border:hover .star-icon {
+  box-shadow: 
+    0 0 8px #ffd700,
+    0 0 12px #ffea00,
+    0 0 16px #fff581;
+}
+.profile-emoji {
+  font-size: 26px;   /* increase size */
+  margin-right: 6px;
+}
+.profile-border {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Profile icon base */
+.profile-icon {
+  padding: 4px 6px;
+  border: 2px solid white;     /* white border */
+  border-radius: 6px;          /* rounded box */
+  font-size: 20px;
+  transition: 0.25s ease-in-out;
+}
+
+/* Hover glow + size increase */
+.profile-border:hover .profile-icon {
+  transform: scale(1.2);      /* becomes bigger */
+  box-shadow: 
+    0 0 8px white,
+    0 0 12px white,
+    0 0 18px rgba(255,255,255,0.8);
+}
+.logo-with-image {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  width: 40px;       /* Adjust size here */
+  height: 40px;
+  object-fit: cover;
+  border-radius: 8px;   /* optional */
+}
+
+

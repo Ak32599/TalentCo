@@ -1,26 +1,28 @@
-/* Add these styles to the bottom of ProfessionalCard.css */
-.professional-card {
-  position: relative; /* Needed for absolute positioning of the button */
-}
-
-.favorite-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  cursor: pointer;
+.category-card {
+  background: none;   /* stays same */
+  padding: 30px 20px;
+  border-radius: 12px; /* normal shape */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease;
-  z-index: 2; /* Ensure it's above other elements */
 }
 
-.favorite-btn:hover {
-  transform: scale(1.1);
+/* Only shape changes, no color change */
+.category-card:hover {
+  border-radius: 50%;
+  transform: scale(1.08); /* optional zoom */
+  background: black;      /* keep same */
+}
+
+/* Icon animation still optional */
+.category-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+  transform: scale(1.15);
 }
