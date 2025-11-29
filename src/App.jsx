@@ -4,11 +4,11 @@ import { Routes, Route, useNavigate, Outlet } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import SignIn from './pages/signin';
-import Signin from './pages/Signin';
-import HomePage from './pages/homepage';
-import ProfessionalsListPage from './pages/professionalslistpage';
-import ProfessionalDetailPage from './pages/professionaldetailpage';
+import SignIn from './pages/Signin';   // ✅ FIX: name matched to usage
+import HomePage from './pages/Homepage';
+import ProfessionalsListPage from './pages/ProfessionalsListPage';
+import ProfessionalDetailPage from './pages/ProfessionalDetailPage';
+// import LandingPage from './pages/LandingPage';
 import ContactPage from './pages/contactpage';
 import FavoritesPage from './pages/favoritespage';
 import SearchPage from './pages/searchpage';
@@ -60,3 +60,4 @@ function App() {
 }
 
 export default App;
+// 

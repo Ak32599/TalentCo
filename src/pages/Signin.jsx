@@ -13,7 +13,7 @@ const Signin = () => {
   const validAdmins = {
     "2400032599@kluniversity.in": "32599AK",
     "2400030653@kluniversity.in": "30653RA",
-    "2400030159@kluniversity.in": "SA" // Note: As per your request, password for this user is 'SA'
+    "2400030159@kluniversity.in": "30159SA" // Note: As per your request, password for this user is 'SA'
   };
 
   const handleChange = (e) => {

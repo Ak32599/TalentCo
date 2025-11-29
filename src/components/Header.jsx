@@ -1,9 +1,3 @@
-
-
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
@@ -41,7 +35,7 @@ const Header = ({ onSearch }) => {
     <header className="app-header">
       <div className="header-content">
         <Link to="/" className="logo">
-          ProfessionalFinder
+          TalentCo
         </Link>
         
         <form onSubmit={handleSearchSubmit} className="search-form">
