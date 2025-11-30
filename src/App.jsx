@@ -9,9 +9,9 @@ import HomePage from './pages/LandingPage';
 import ProfessionalsListPage from './pages/ProfessionalsListPage';
 import ProfessionalDetailPage from './pages/ProfessionalDetailPage';
 import ContactPage from './pages/ContactPage';
-import FavoritesPage from './pages/favoritespage';
-import SearchPage from './pages/searchpage';
-import DashboardPage from './pages/dashboardpage';
+import FavoritesPage from './pages/FavoritesPage';
+import SearchPage from './pages/SearchPage';
+import DashboardPage from './pages/DashboardPage';
 import PopularCategories from './components/PopularCategories';
 import LearningResources from './pages/LearningResources';
 
