@@ -1,0 +1,59 @@
+/* src/pages/LearningResources.css */
+.learning-page {
+  background: #f4f6f9;
+  min-height: calc(100vh - 120px);
+  padding: 24px 20px 40px;
+}
+
+.learning-header {
+  background: #4A90E2;
+  color: white;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.learning-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.learning-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 10px whitesmoke;
+  text-align: center;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.learning-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px whitesmoke;
+}
+
+.learning-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.visit-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #4A90E2;
+}
+
+.learning-footer {
+  text-align: center;
+  padding: 18px;
+  margin-top: 26px;
+  color: #666;
+}

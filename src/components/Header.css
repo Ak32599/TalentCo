@@ -165,4 +165,320 @@
   border-radius: 8px;   /* optional */
 }
 
+/* --- append these to src/components/Header.css --- */
+/* --- FIX: ensure three dots become visible --- */
+/* --- Ensure dropdown stays interactive and clickable --- */
 
+.dots-menu {
+  position: relative;
+  display: flex !important;
+  align-items: center !important;
+  z-index: 1100; /* above other header items */
+}
+
+.dots-button {
+  display: flex !important;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  padding: 6px 8px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.dots-button .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background:   white;
+  display: inline-block;
+}
+
+.dots-dropdown {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  min-width: 160px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px black;
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 160ms ease, transform 160ms ease;
+  padding: 6px;
+}
+
+/* visible state */
+.dots-dropdown.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* items */
+.dropdown-item {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 10px 12px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.dropdown-item:hover { background: rgba(0,0,0,0.04); }
+/* src/components/Header.css */
+:root {
+  --primary: #10a37f;
+  --dark: #222;
+}
+
+.app-header {
+  background: var(--dark);
+  color: white;
+  padding: 10px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.logo-text {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* search */
+.search-form {
+  flex: 1;
+}
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* nav */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* dots menu */
+.dots-menu {
+  position: relative;
+}
+.dots-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 4px;
+  padding: 6px;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.85;
+}
+.dots-dropdown {
+  position: absolute;
+  right: 0;
+  top: 34px;
+  min-width: 160px;
+  background: white;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  padding: 8px;
+  transform-origin: top right;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+  transform: translateY(-6px);
+  z-index: 60;
+}
+.dots-dropdown.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.dropdown-item:hover {
+  background: #f2f2f2;
+}
+
+/* user links/buttons */
+.app-header {
+  background: var(--dark);
+  color: white;
+  padding: 10px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 80;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.logo-text {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* search */
+.search-form {
+  flex: 1;
+}
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* nav */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* dots menu */
+.dots-menu {
+  position: relative;
+}
+.dots-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 4px;
+  padding: 6px;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.85;
+}
+.dots-dropdown {
+  position: absolute;
+  right: 0;
+  top: 34px;
+  min-width: 160px;
+  background: white;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  padding: 8px;
+  transform-origin: top right;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+  transform: translateY(-6px);
+  z-index: 60;
+}
+.dots-dropdown.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.dropdown-item:hover {
+  background: #f2f2f2;
+}
+
+/* user links/buttons */
+.header-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 6px;
+}
+.header-button {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.header-button.signin {
+  background: var(--primary);
+  border: none;
+}
+
+/* chat button in header */
+.chatgpt-btn-header {
+  margin-left: 6px;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
