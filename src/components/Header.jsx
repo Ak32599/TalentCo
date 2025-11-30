@@ -19,7 +19,7 @@ const Header = ({ onSearch }) => {
       } else {
         setUser(null);
       }
-    } catch (err) {
+    } catch {
       setUser(null);
     }
   }, []);

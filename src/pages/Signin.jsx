@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './SignIn.css';
+import './Signin.css';
 
 const Signin = () => {
   const navigate = useNavigate();
@@ -35,8 +35,10 @@ const Signin = () => {
 
   const handleSignUp = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     if (formData.password !== formData.confirmPassword) {
       setError('Passwords do not match.');
+      setIsLoading(false);
       return;
     }
     const users = JSON.parse(localStorage.getItem('users') || '[]');
@@ -48,27 +50,34 @@ const Signin = () => {
     users.push(newUser);
     localStorage.setItem('users', JSON.stringify(users));
     handleAuthSuccess(newUser); // Automatically log in the new user
+    setIsLoading(false);
   };
 
   const handleSignIn = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     const users = JSON.parse(localStorage.getItem('users') || '[]');
     const user = users.find(u => u.email === formData.email && u.password === formData.password);
     if (user) {
       handleAuthSuccess(user);
+      setIsLoading(false);
     } else {
       setError('Invalid email or password.');
+      setIsLoading(false);
     }
   };
 
   const handleAdminLogin = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     if (validAdmins[formData.email] && validAdmins[formData.email] === formData.password) {
       alert('Admin login successful. Access granted.');
+      setIsLoading(false);
       // Here you could navigate to a dedicated admin dashboard if you build one
       // For now, it just shows an alert.
     } else {
       setError('Invalid admin credentials. Access denied.');
+      setIsLoading(false);
     }
   };
 

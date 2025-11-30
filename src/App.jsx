@@ -38,7 +38,7 @@ const MainAppLayout = ({ onSearch }) => (
 );
 
 function App() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
   const handleSearch = (query) => {
