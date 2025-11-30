@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Ak32599/TalentCo/",
+  "homepage": "https://Ak32599.github.io/TalentCo/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
